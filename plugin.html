@@ -1,0 +1,206 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<!-- utf-8 works for most cases -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Forcing initial-scale shouldn't be necessary -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- Use the latest (edge) version of IE rendering engine -->
+<title>EmailTemplate-Fluid</title>
+<!-- The title tag shows in email notifications, like Android 4.4. -->
+
+<!-- Please use an inliner tool to convert all CSS to inline as inpage or external CSS is removed by email clients -->
+<!-- important in CSS is used to prevent the styles of currently inline CSS from overriding the ones mentioned in media queries when corresponding screen sizes are encountered -->
+
+<!-- CSS Reset -->
+<style type="text/css">
+/* What it does: Remove spaces around the email design added by some email clients. */
+      /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+html, body {
+	margin: 0 !important;
+	padding: 0 !important;
+	height: 100% !important;
+	width: 100% !important;
+}
+/* What it does: Stops email clients resizing small text. */
+* {
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+/* What it does: Forces Outlook.com to display emails full width. */
+.ExternalClass {
+	width: 100%;
+}
+/* What is does: Centers email on Android 4.4 */
+div[style*="margin: 16px 0"] {
+	margin: 0 !important;
+}
+@font-face {
+    font-family: "Helena Display";
+    src: url("helena._display-webfont.woff") format('woff');
+}
+/* What it does: Stops Outlook from adding extra spacing to tables. */
+table, td {
+	mso-table-lspace: 0pt !important;
+	mso-table-rspace: 0pt !important;
+}
+/* What it does: Fixes webkit padding issue. Fix for Yahoo mail table alignment bug. Applies table-layout to the first 2 tables then removes for anything nested deeper. */
+table {
+	border-spacing: 0 !important;
+	border-collapse: collapse !important;
+	table-layout: fixed !important;
+	margin: 0 auto !important;
+}
+table table table {
+	table-layout: auto;
+}
+/* What it does: Uses a better rendering method when resizing images in IE. */
+img {
+	-ms-interpolation-mode: bicubic;
+}
+/* What it does: Overrides styles added when Yahoo's auto-senses a link. */
+.yshortcuts a {
+	border-bottom: none !important;
+}
+/* What it does: Another work-around for iOS meddling in triggered links. */
+a[x-apple-data-detectors] {
+	color: inherit !important;
+}
+</style>
+
+<!-- Progressive Enhancements -->
+<style type="text/css">
+/* What it does: Hover styles for buttons */
+.button-td, .button-a {
+	transition: all 100ms ease-in;
+}
+.button-td:hover, .button-a:hover {
+	background: #555555 !important;
+	border-color: #555555 !important;
+}
+.fuck {
+	background-color: red;
+	background-image: linear-gradient(to bottom, rgba(255,109,106,1) 0%, rgba(239,190,125,1) 20%, rgba(233,236,107,1) 40%, rgba(119,221,119,1) 60%, rgba(139,211,230,1) 80%, rgba(177,162,202,1) 100%);
+}
+</style>
+</head>
+<body width="100%" height="100%" bgcolor="#e0e0e0" style="margin: 0;" yahoo="yahoo">
+<table cellpadding="0" cellspacing="0" border="0" height="100%" width="100%" bgcolor="#e0e0e0" style="border-collapse:collapse;" class='fuck'>
+  <tr>
+    <td><center style="width: 100%;">
+        
+        <!-- Visually Hidden Preheader Text : BEGIN -->
+        <div style="display:none;font-size:1px;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;mso-hide:all;font-family: sans-serif;"> (Optional) This text will appear in the inbox preview, but not the email body. </div>
+        <!-- Visually Hidden Preheader Text : END -->
+        
+        <div style="max-width: 600px;"> 
+          <!--[if (gte mso 9)|(IE)]>
+            <table cellspacing="0" cellpadding="0" border="0" width="600" align="center">
+            <tr>
+            <td>
+            <![endif]--> 
+          
+          <!-- Email Header : BEGIN -->
+          <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 600px;">
+            <tr>
+              <td style="padding: 20px 0; text-align: center"><font style='font-family: Helena Display; font-size: 60px; color: white;'>ASYG Minecraft Server</font></td>
+            </tr>
+          </table>
+          <!-- Email Header : END --> 
+          
+          <!-- Email Body : BEGIN -->
+          <table cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#ffffff" width="100%" style="max-width: 600px;">
+            
+            <!-- Hero Image, Flush : BEGIN -->
+
+            <!-- Hero Image, Flush : END --> 
+            
+            <!-- 1 Column Text : BEGIN -->
+            <!-- 1 Column Text : BEGIN --> 
+            
+            <!-- Two Even Columns : BEGIN -->
+            <tr>
+              <td bgcolor="#ffffff" align="center" height="100%" valign="top" width="100%"><!--[if mso]>
+                        <table cellspacing="0" cellpadding="0" border="0" align="center" width="560">
+                        <tr>
+                        <td align="center" valign="top" width="560">
+                        <![endif]-->
+                
+                <table border="0" cellpadding="0" cellspacing="0" align="center" width="100%" style="max-width:560px;">
+                  <tr>
+                    <td align="center" valign="top" style="font-size:0; padding: 10px 10px 30px 10px;"><!--[if mso]>
+                         <table border="0" cellspacing="0" cellpadding="0" align="center" width="560">
+                            <tr>
+                               <td align="left" valign="top" width="280">
+                    <![endif]-->
+                      
+                      <div style="display:inline-block; max-width:85%; margin: 0 -2px; vertical-align:top; width:100%;" class="stack-column">
+                        <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                          <tr>
+                            <td style="padding: 0 20px;"><table cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 14px;text-align: left;">
+                                <tr>
+
+                                </tr>
+                                <tr>
+                                  <td style="font-family: sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555; padding-top: 10px;" class="stack-column-center"> <p><b>Special Commands</b><br>
+                                    /tpa [player] - allows you to request to tp to someone elses location<br>
+                                    /ah - allows you to access the auction house where players can bid on items using money<br>
+                                    /trade [player] - allows you to trade items and/or money with another player<br>
+                                    /sell - allows you to sell your items for money<br>
+                                    /bal - see your balance<br>
+                                    /kill - instantly kills you when you type it<br>LWC - <a href='https://github.com/pop4959/LWCX/wiki/Getting-Started'>Click here</a> for info on how to use the server's chest locking plugin.<br>/offhand - allows Bedrock players to move items to their offhand<br>/help - for more info on commands!
+                                    </p></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                        </table>
+                      </div>
+                      
+                      <!--[if mso]>
+                                    </td>
+                                    <td align="left" valign="top" width="280">
+                                    <![endif]-->
+                      
+                     
+                      
+                      <!--[if mso]>
+                                    </td>
+                                    </tr>
+                                    </table>
+                                    <![endif]--></td>
+                  </tr>
+                </table>
+                
+                <!--[if mso]>
+                        </td>
+                        </tr>
+                        </table>
+                        <![endif]--></td>
+            </tr>
+            <!-- Two Even Columns : END -->
+            
+          </table>
+          <!-- Email Body : END --> 
+          
+          <!-- Email Footer : BEGIN -->
+          <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 680px;">
+            <tr>
+              <td style="padding: 40px 10px;width: 100%;font-size: 12px; font-family: sans-serif; mso-height-rule: exactly; line-height:18px; text-align: center; color: #FFFFFF;">
+
+                Alphabet Soup Youth Group<br>
+            </tr>
+          </table>
+          <!-- Email Footer : END --> 
+          
+          <!--[if (gte mso 9)|(IE)]>
+            </td>
+            </tr>
+            </table>
+            <![endif]--> 
+        </div>
+      </center></td>
+  </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,218 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<!-- utf-8 works for most cases -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Forcing initial-scale shouldn't be necessary -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- Use the latest (edge) version of IE rendering engine -->
+<title>EmailTemplate-Fluid</title>
+<!-- The title tag shows in email notifications, like Android 4.4. -->
+
+<!-- Please use an inliner tool to convert all CSS to inline as inpage or external CSS is removed by email clients -->
+<!-- important in CSS is used to prevent the styles of currently inline CSS from overriding the ones mentioned in media queries when corresponding screen sizes are encountered -->
+
+<!-- CSS Reset -->
+	
+<style type="text/css">
+/* What it does: Remove spaces around the email design added by some email clients. */
+      /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+html, body {
+	margin: 0 !important;
+	padding: 0 !important;
+	height: 100% !important;
+	width: 100% !important;
+}
+
+@font-face {
+    font-family: "Helena Display";
+    src: url("helena._display-webfont.woff") format('woff');
+}
+/* What it does: Stops email clients resizing small text. */
+* {
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+/* What it does: Forces Outlook.com to display emails full width. */
+.ExternalClass {
+	width: 100%;
+}
+/* What is does: Centers email on Android 4.4 */
+div[style*="margin: 16px 0"] {
+	margin: 0 !important;
+}
+/* What it does: Stops Outlook from adding extra spacing to tables. */
+table, td {
+	mso-table-lspace: 0pt !important;
+	mso-table-rspace: 0pt !important;
+}
+/* What it does: Fixes webkit padding issue. Fix for Yahoo mail table alignment bug. Applies table-layout to the first 2 tables then removes for anything nested deeper. */
+table {
+	border-spacing: 0 !important;
+	border-collapse: collapse !important;
+	table-layout: fixed !important;
+	margin: 0 auto !important;
+}
+table table table {
+	table-layout: auto;
+}
+/* What it does: Uses a better rendering method when resizing images in IE. */
+img {
+	-ms-interpolation-mode: bicubic;
+}
+/* What it does: Overrides styles added when Yahoo's auto-senses a link. */
+.yshortcuts a {
+	border-bottom: none !important;
+}
+/* What it does: Another work-around for iOS meddling in triggered links. */
+a[x-apple-data-detectors] {
+	color: inherit !important;
+}
+.button-b {
+}
+</style>
+
+<!-- Progressive Enhancements -->
+<style type="text/css">
+/* What it does: Hover styles for buttons */
+.button-td, .button-a {
+	transition: all 100ms ease-in;
+}
+.button-td:hover, .button-a:hover {
+	background: #555555 !important;
+	border-color: #555555 !important;
+}
+	
+.fuck {
+	background-color: red;
+	background-image: linear-gradient(to bottom, rgba(255,109,106,1) 0%, rgba(239,190,125,1) 20%, rgba(233,236,107,1) 40%, rgba(119,221,119,1) 60%, rgba(139,211,230,1) 80%, rgba(177,162,202,1) 100%);
+}
+</style>
+</head>
+<body width="100%" height="100%" style="margin: 0;" yahoo="yahoo">
+<table cellpadding="0" cellspacing="0" border="0" height="100%" width="100%" bgcolor="#e0e0e0" style="border-collapse:collapse;" class='fuck'>
+  <tr>
+    <td><center style="width: 100%;">
+        
+        <!-- Visually Hidden Preheader Text : BEGIN -->
+        <div style="display:none;font-size:1px;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;mso-hide:all;font-family: sans-serif;"> (Optional) This text will appear in the inbox preview, but not the email body. </div>
+        <!-- Visually Hidden Preheader Text : END -->
+        
+        <div style="max-width: 600px;"> 
+          <!--[if (gte mso 9)|(IE)]>
+            <table cellspacing="0" cellpadding="0" border="0" width="600" align="center">
+            <tr>
+            <td>
+            <![endif]--> 
+          
+          <!-- Email Header : BEGIN -->
+          <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 600px;">
+            <tr>
+              <td style="padding: 0px 0; text-align: center; font-family: Helena Display; font-size: 30px;"><font color='white'><h1>ASYG<br>Minecraft Server</h1></font></td>
+            </tr>
+          </table>
+          <!-- Email Header : END --> 
+          
+          <!-- Email Body : BEGIN -->
+          <table cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#ffffff" width="100%" style="max-width: 600px;">
+            
+            <!-- Hero Image, Flush : BEGIN -->
+
+            <!-- Hero Image, Flush : END --> 
+            
+            <!-- 1 Column Text : BEGIN -->
+            <tr>
+              <td><table cellspacing="0" cellpadding="0" border="0" width="100%">
+                  <tr>
+                    <td style="padding: 40px; font-family: sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555; text-align: center"><font style="font-size: 30px;">IP: play.asyg.xyz</font><br>
+                      <br>
+                      
+                      <!-- Button : Begin -->
+                      
+                      <table cellspacing="0" cellpadding="0" border="0" align="center" style="margin: auto;">
+                        <tr>
+                          <td style="border-radius: 3px; background: #222222; text-align: center;" class="button-td"><a href="http://map.asyg.xyz/" style="background: #222222; border: 15px solid #222222; padding: 0 10px;color: #ffffff; font-family: sans-serif; font-size: 13px; line-height: 1.1; text-align: center; text-decoration: none; display: block; border-radius: 3px; font-weight: bold;" class="button-a"> 
+                            <!--[if mso]>&nbsp;&nbsp;&nbsp;&nbsp;<![endif]-->View Online Map<!--[if mso]>&nbsp;&nbsp;&nbsp;&nbsp;<![endif]--> 
+                            </a></td>
+                        </tr>
+                      </table>
+						<br>
+					<table cellspacing="0" cellpadding="0" border="0" align="center" style="margin: auto;">
+                        <tr>
+                          <td style="border-radius: 3px; background: #222222; text-align: center;" class="button-td"><a href="http://www.asyg.xyz/server/plugin.html" style="background: #222222; border: 15px solid #222222; padding: 0 10px;color: #ffffff; font-family: sans-serif; font-size: 13px; line-height: 1.1; text-align: center; text-decoration: none; display: block; border-radius: 3px; font-weight: bold;" class="button-a"> 
+                            <!--[if mso]>&nbsp;&nbsp;&nbsp;&nbsp;<![endif]-->View Features<!--[if mso]>&nbsp;&nbsp;&nbsp;&nbsp;<![endif]--> 
+                            </a></td>
+                        </tr>
+                      </table>
+                      <p><font style='font-size: 30px;'><b>The server is currently under construction and as such, it won't be joinable until Friday, 8 April.</b></font></p>
+                      <p>
+                        <!-- Button : END -->
+Server Version: 1.18.1<br>
+                        Supported Versions (Java): 1.7.x - 1.18.1<br>
+                        Supported Versions (Bedrock): 1.17.41 - 1.18.12</p>
+                      <p>&nbsp;</p>
+                      <p>The official Alphabet Soup Minecraft server! Compatible with Java and Bedrock edition.</p>
+                      <p>&nbsp;</p>
+                      <p><b>Rules</b></p>
+					  <p>1. No griefing<br>
+					    2. No stealing<br>
+					    3. No unjustified killings<br>
+					    4. No hacking/x-ray<br>
+					    5. Have fun!</p>
+					  <p>&nbsp;</p>
+					  <p><b>Features</b></p>
+					  <p>- Chest locking<br>
+					    - Stairs can be used as chairs (right-click)<br>
+						  - Live map available <a href="https://map.asyg.xyz/">here</a><br>
+						- Auction House<br>
+						- Jobs<br>
+						- /tpa, guilds, trading<br>
+						- Special Items! (tools, armor, etc.)
+					    </a></p>
+					  <p>- And more that I can't be bothered to add here (go check out the dedicated page that lists all special features by clicking the button below!)</p>
+<table cellspacing="0" cellpadding="0" border="0" align="center" style="margin: auto;">
+                        <tr>
+                          <td style="border-radius: 3px; background: #222222; text-align: center;" class="button-td"><a href="http://www.asyg.xyz/server/plugin.html" class="button-b" style="background: #222222; border: 15px solid #222222; padding: 0 10px;color: #ffffff; font-family: sans-serif; font-size: 13px; line-height: 1.1; text-align: center; text-decoration: none; display: block; border-radius: 3px; font-weight: bold;"> 
+                            <!--[if mso]>&nbsp;&nbsp;&nbsp;&nbsp;<![endif]-->
+                            <!--[if mso]>&nbsp;&nbsp;&nbsp;&nbsp;<![endif]-->
+Learn More</a></td>
+                        </tr>
+                      </table>
+					  <p>&nbsp;</p>
+<p><b>Important Information</b></p>
+					  <p>This server officially supports Bedrock edition (console, mobile, etc.) but it is recommended you use Java edition when playing on the server as using Bedrock can be unstable at times. Java edition versions below 1.17.x won't support additions from the Caves and Cliffs update, therefore blocks below Y=0 won't be shown.</p>
+					  <p>KeepInventory is OFF so if you die you will lose your stuff (unless you pick it up!).&nbsp;</p>
+<p>The server also has a whitelist. Any players who join on Day 1 will automatically be added to the whitelist. If you try to join and encounter a whitelist error, please contact me on Discord with your Minecraft username and I'll whitelist you. (<i>ftt#8857</i>)</p>
+                    </tr>
+                </table></td>
+            </tr>
+            <!-- 1 Column Text : BEGIN --> 
+            
+            <!-- Two Even Columns : BEGIN -->
+            
+            
+          </table>
+          <!-- Email Body : END --> 
+          
+          <!-- Email Footer : BEGIN -->
+          <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 680px;">
+            <tr>
+              <td style="padding: 40px 10px;width: 100%;font-size: 12px; font-family: sans-serif; mso-height-rule: exactly; line-height:18px; text-align: center; color: #888888;">
+
+                <font color='white'>Alphabet Soup Youth Group</font><br>
+            </tr>
+          </table>
+          <!-- Email Footer : END --> 
+          
+          <!--[if (gte mso 9)|(IE)]>
+            </td>
+            </tr>
+            </table>
+            <![endif]--> 
+        </div>
+      </center></td>
+  </tr>
+</table>
+</body>
+</html>
